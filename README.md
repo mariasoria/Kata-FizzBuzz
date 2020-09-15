@@ -23,4 +23,5 @@ number = 15
 
 New requirements:
 * A number is fizz if it is divisible by 3 or if it has a 3 in it.
- * A number is buzz if it is divisible by 5 or if it has a 5 in it.
+* A number is buzz if it is divisible by 5 or if it has a 5 in it.
+* A number is fizzbuzz if it is divisible by 3&5 or if it has a 3 and a 5 in it.
