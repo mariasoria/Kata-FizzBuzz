@@ -15,12 +15,31 @@ public class FizzBuzzTest {
 
     @Test
     public void shouldShowFizzBuzz15(){
-        assertArrayEquals(new String [] {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"}, FizzBuzz.fizzBuzz(15));
+        assertArrayEquals(new String [] {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "Fizz", "14", "FizzBuzz"}, FizzBuzz.fizzBuzz(15));
     }
 
     @Test
     public void shouldShowFizzBuzz20(){
-        assertArrayEquals(new String [] {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz", "16", "17", "Fizz", "19", "Buzz"}, FizzBuzz.fizzBuzz(20));
+        assertArrayEquals(new String [] {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "Fizz", "14", "FizzBuzz", "16", "17", "Fizz", "19", "Buzz"}, FizzBuzz.fizzBuzz(20));
+    }
+
+    // Stage 2
+    @Test
+    public void show13AsFizz(){
+        assertArrayEquals(new String [] {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "Fizz", "14", "FizzBuzz"}, FizzBuzz.fizzBuzz(15));
+    }
+
+    @Test
+    public void show35AsFizzBuzz(){
+        assertArrayEquals(new String [] {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "Fizz", "14",
+                "FizzBuzz", "16", "17", "Fizz", "19", "Buzz", "Fizz", "22", "Fizz", "Fizz", "Buzz", "26", "Fizz", "28", "29", "FizzBuzz", "Fizz", "Fizz", "Fizz", "Fizz", "FizzBuzz"}, FizzBuzz.fizzBuzz(35));
+    }
+
+    @Test
+    public void show50AsBuzz(){
+        assertArrayEquals(new String [] {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "Fizz", "14", "FizzBuzz", "16", "17", "Fizz", "19", "Buzz",
+                "Fizz", "22", "Fizz", "Fizz", "Buzz", "26", "Fizz", "28", "29", "FizzBuzz", "Fizz", "Fizz", "Fizz", "Fizz", "FizzBuzz", "Fizz", "Fizz", "Fizz", "Fizz", "Buzz",
+                "41", "Fizz", "Fizz", "44", "FizzBuzz", "46", "47", "Fizz", "49", "Buzz"}, FizzBuzz.fizzBuzz(50));
     }
 }
 
